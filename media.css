@@ -1,0 +1,70 @@
+  /*    TABLET          */
+  @media (max-width: 770px) {
+
+    @keyframes typewriter {
+        from {
+              width: 0;
+        }
+        to {
+              width: 17em;
+        }
+  }
+    .collab, #personal, #address {
+          text-align: center;
+    }
+
+    .info ul {
+          margin: 0 0 0 -22px;
+          padding: 0;
+    }
+
+    #media {
+        display: none;
+    }
+    
+
+    h6 {
+        display: none;
+    }
+
+    .proj-section{
+        justify-content: center!important;
+    }
+
+    .team-area{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .connect{
+        justify-content: center;
+    }
+    .single-team{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .single-team img{
+        width: 100%;
+        position: relative;
+    }
+    h2{
+        display: block;
+    }
+    .single-team .team-text {
+        opacity: 1 ;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  /*    MOBILE         */
