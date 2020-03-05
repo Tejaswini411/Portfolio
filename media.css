@@ -58,7 +58,7 @@
     .single-team .team-text {
         opacity: 1 ;
         text-align: center;
-        translate: 0;
+        transform: none;
     }
 }
 
