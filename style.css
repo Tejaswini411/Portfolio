@@ -11,40 +11,69 @@ html, body {
 
 
 /*--------------- typewriter effect --------------- */
-/* .line {
-    width: 24em; 
-    top: 50%;
-    margin: auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    text-align: center;
-     white-space: nowrap; 
-    overflow: hidden; 
-    transform: translateY(-50%);
+.holder{
+    float: right;
+    margin-top: 10px;
 }
 
-.anim-typewriter {
-    animation: typewriter 4s steps(50) 1s 1 normal both,
-    blinkTextCussor 500ms steps(50) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-          width: 0;
-    }
-    to {
-          width: 34em;
-    }
-}
-
-
-@keyframes blinkTextCussor {
-    from {
-          border-right-color: rgba(255, 255, 255, 0.75);
-    }
-    to {
-          border-right-color: transparent;
-    }
-} */
+ .outline {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 300ms;
+  }
+  .outline {
+    color: white;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .outline:before, .outline:after, .outline .lines:before, .outline .lines:after {
+    background-color: white;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 300ms;
+    width: 100%;
+  }
+  .outline:before {
+    bottom: 0;
+    top: auto;
+  }
+  .outline .lines {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  .outline .lines:before, .outline .lines:after {
+    height: 100%;
+    width: 2px;
+  }
+  .outline .lines:after {
+    left: auto;
+    right: 0;
+  }
+  .outline:hover:before {
+    transform: translateX(-101%);
+  }
+  .outline:hover:after {
+    transform: translateX(101%);
+  }
+  .outline:hover .lines:before {
+    transform: translateY(-101%);
+  }
+  .outline:hover .lines:after {
+    transform: translateY(101%);
+  }  
 
 
 h2.tagline {
@@ -129,8 +158,10 @@ h2.tagline {
 /*-------project section---------*/
 
 h6 {
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    text-shadow: 0 0 .7px, 0 0 1.1px, 0 0 1.1px;
+    filter: drop-shadow(3px 3px 2px #000);
 }
+
 .proj-section {
     display: flex;
     position: relative;
@@ -294,7 +325,7 @@ h2{
 
 }
 
-.button {
+.button{
     display: inline-flex;
     height: 40px;
     width: 150px;

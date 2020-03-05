@@ -1,4 +1,4 @@
-  /*    TABLET          */
+  /*    TABLET  and MOBILE     */
   @media (max-width: 770px) {
 
     @keyframes typewriter {
@@ -59,6 +59,7 @@
         opacity: 1 ;
         text-align: center;
         transform: none;
+        transition: none;
     }
 }
 
@@ -71,5 +72,3 @@
 
 
 
-
-  /*    MOBILE         */
