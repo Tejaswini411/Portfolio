@@ -18,7 +18,7 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
 
-    var dataText = [ "based in Vacouver", "passionate about new ideas and new ways for problem solving", "fascinated by tools for thought and creation", "a dog lover", "a fitness enthusiast", "a fashion freak", "curious about Design"];
+    var dataText = [ "based in Vacouver", "passionate about new ideas and new ways for problem solving", "fascinated by tools for thought and creation", "a dog lover", "a fitness enthusiast", "a fashion freak", "curious about developmet and design"];
     
   
     function typeWriter(text, i, fnCallback) {
